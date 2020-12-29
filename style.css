@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Fanwood Text";
+}
+
+#search {
+  width: 600px;
+  height: 7vh;
+  margin-left: 150px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.divider {
+  background: yellow;
+}
+.header {
+  overflow: hidden;
+  background-color: #232f3e;
+  padding: 20px 10px;
+}
+#animation {
+  animation: animate1 forwards 2s;
+}
+.cart-btn {
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 1.4rem;
+  background: yellow;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  border-radius: 7px;
+  transition: width 2s;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  width: 200px;
+}
+
+.header #animation {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.navbar ul {
+  background: #232f3e;
+  display: flex;
+
+  list-style: none;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+#btn {
+  background: #232f3e;
+  letter-spacing: 3px;
+  color: white;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#btn:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item-button {
+  background: yellow;
+  border-radius: 7px;
+  border: none;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.item-button:hover {
+  padding: 10px;
+}
+
+@keyframes animate1 {
+  from {
+    font-size: 1.4rem;
+    color: lightyellow;
+  }
+  to {
+    font-size: 2rem;
+    background: linear-gradient(to right, lightyellow, yellow);
+    color: black;
+  }
+}
+
+@keyframes animate2 {
+  from {
+    color: lightyellow;
+  }
+  to {
+    color: yellow;
+  }
+}
